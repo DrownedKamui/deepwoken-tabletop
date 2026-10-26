@@ -73,9 +73,6 @@ $('#sortCombat').onclick=()=>{state.combatants.sort((a,b)=>b.init-a.init);state.
 $('#nextTurn').onclick=()=>{if(!state.combatants.length)return alert('Добавь участников');state.turn++;if(state.turn>=state.combatants.length){state.turn=0;state.round++}emitState();renderCombat()};
 $('#saveEnemy').onclick=()=>{if(!isGM())return;let e={name:getVal('enemyName').trim(),type:getVal('enemyType'),hp:+getVal('enemyHp')||1,ac:+getVal('enemyAc')||10,attack:getVal('enemyAttack'),damage:getVal('enemyDamage'),moves:getVal('enemyMoves')};if(!e.name)return alert('Введи имя врага');state.enemies.push(e);emitState();renderEnemies()};
 $('#saveNotes').onclick=()=>{state.notes=getVal('notesText');state.sceneTitle=getVal('sceneTitle');emitState();toast('Заметки сохранены')};
-</script><script>if('serviceWorker' in navigator)
-
-</script>
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
