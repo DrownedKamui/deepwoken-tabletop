@@ -1,0 +1,20 @@
+
+{
+  "name": "Deepwoken Tabletop",
+  "short_name": "Deepwoken",
+  "description": "Мультиплеерная настольная игра по мотивам Deepwoken",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#10141c",
+  "theme_color": "#10141c",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
